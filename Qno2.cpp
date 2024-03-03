@@ -71,21 +71,34 @@ int main()
 {
   int day, month, year;
 
+  // Test Case 1
+  cout << "Test Case 1 - Valid Date:\n";
   cout << "Please enter day: ";
   cin >> day;
-
   cout << "Please enter month: ";
   cin >> month;
-
   cout << "Please enter year: ";
   cin >> year;
 
-  Date date(day, month, year);
+  Date date1(day, month, year);
+  date1.display();
 
-  date.display();
+  // Test Case 2
+  cout << "\nTest Case 2 - Invalid Date (Defaulted to day/month=1/year):\n";
+  cout << "Please enter day: ";
+  cin >> day;
+  cout << "Please enter month: ";
+  cin >> month;
+  cout << "Please enter year: ";
+  cin >> year;
+
+  Date date2(day, month, year);
+  date2.display();
 
   system("pause");
   return 0;
 }
+
+
 
 
